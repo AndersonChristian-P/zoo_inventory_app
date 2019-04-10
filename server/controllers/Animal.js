@@ -16,4 +16,10 @@ let animals = [
 
 module.exports = {
   get: (req, res) => res.send(animals),
+  create: (req, res) => {
+    let newAnimal = req.body
+    newAnimal.id = id++
+    animals.push(newAnimal)
+    res.send(animals)
+  }
 }
