@@ -1,3 +1,4 @@
+// this fetches the data from the api
 import React, { Component } from "react"
 import axios from "axios"
 
