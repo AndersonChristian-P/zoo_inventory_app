@@ -9,7 +9,7 @@ app.use(express.json())
 
 app.get("/api/animals", AnimalCtrl.get)
 app.post("/api/animals", AnimalCtrl.create)
-
+app.put("/api/animals/:id", AnimalCtrl.update)
 
 
 app.listen(port, () => {
